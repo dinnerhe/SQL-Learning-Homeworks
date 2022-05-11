@@ -37,7 +37,6 @@ SELECT Name, ListPrice
 FROM Production.Product
 WHERE Name like 'S%' OR Name like 'A%'
 ORDER BY Name ASC 
-OFFSET 0 ROWS FETCH NEXT 5 ROW ONLY
 -- 11
 select * from Production.Product
 WHERE Name like 'SPO[^K]%'
