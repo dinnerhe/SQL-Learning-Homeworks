@@ -25,8 +25,8 @@ OLAP stands for Online Analytical Processes. It can be very large compare to OLT
 
 4. What is the difference between DDL vs. DML?
 
-DDL(Data Definition Languagr) statements are used create(or delete) objects(table, database, etc.) CREATER/ALTER/DROP
-DML(Data Manipulation Language) statements are used to query data and modify data in the databases. E.g. DML statments do not change properties/objects of the database. E.g. SELECT/INSERT/UPDATE/DELETE
+DDL(Data Definition Languagr) statements are used create(or delete) objects(table, database, etc.) E.g. CREATER/ALTER/DROP
+DML(Data Manipulation Language) statements are used to query data and modify data in the databases. DML statments do not change properties/objects of the database. E.g. SELECT/INSERT/UPDATE/DELETE
 
 5.What does the “Like” keyword do?
 
