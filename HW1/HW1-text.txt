@@ -7,17 +7,31 @@ CURD stands for create, read, update, and delete.
 
 2. What are the System Databases?
 
+master: used to store all the info of useer database(catalog database)
+
+model: used to store the properties of newly created databse.
+
+msdb: is used by server agent to store activities
+
+tempdb: stores temporary tables for usage in the query. All the tables in it will be removed after closing sql.
+
+mssql system resource: used to store predefined functionalities/stored procedures.
+
 3. What is OLAP and OLTP?
 
-OLTP stands for Online Transaction Processing. It is
+OLTP stands for Online Transaction Processes. The size of OLTP database is relativelly small, and it usually handles the everyday query operations. OLTP needs to backup to the data center occationally.
 
-OLAP stands for Online Analytical Processing. It can be very large compare to OLTP. Usually it stores a lot of historical data or data that is not updated/used frequently.
+OLAP stands for Online Analytical Processes. It can be very large compare to OLTP. Usually it is data center itself. It stores a lot of historical data or data that is not updated/used frequently.
 
 4. What is the difference between DDL vs. DML?
+
+DDL(Data Definition Languagr) statements are used create(or delete) objects(table, database, etc.) CREATER/ALTER/DROP
+DML(Data Manipulation Language) statements are used to query data and modify data in the databases. E.g. DML statments do not change properties/objects of the database. E.g. SELECT/INSERT/UPDATE/DELETE
 
 5.What does the “Like” keyword do?
 
 Like operator create a search expression to find the rows that match the rules. It can be used with wildcards to match certain characters/patterns.
+
 6. List the wildcards available for the Like Operator.
     1. %: matches 0 or more characters
     2. _: matches exactly one character
@@ -29,14 +43,15 @@ Like operator create a search expression to find the rows that match the rules. 
 7. What's the difference between left join and inner
 join?
 
-Inner join only retuerns the row that matches the condition, and left join returns all the rows that match the condition plus rows in the left database that don't match the condition.
-
+Inner join only retuerns the row that matches the condition, and left join returns all the rows that match the condition plus rows in the left database that don't match the condition. Therefore, when using left join, for rows in left database that do not have matching columns, the missing columns will show NULL.
 
 
 Write queries for following scenarios - Using AdventureWorks Database
 
 
 1. Write a query that retrieves the columns ProductID, Name, Color and ListPrice from the Production.Product table, with no filter. 
+
+(sql file also available in the same folder)
 
 SELECT ProductID, Name, Color, ListPrice FROM Production.Product
 
