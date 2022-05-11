@@ -155,7 +155,6 @@ SELECT Name, ListPrice
 FROM Production.Product
 WHERE Name like 'S%' OR Name like 'A%'
 ORDER BY Name ASC 
-OFFSET 0 ROWS FETCH NEXT 5 ROW ONLY
 
 11. Write a query so you retrieve rows
 that have a Name that begins with the letters SPO, but is then not followed by the letter K. After this zero or more letters can exists. Order the result set by the Name column.
