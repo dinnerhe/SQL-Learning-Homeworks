@@ -1,0 +1,8 @@
+
+21. Union By it self
+E.g.
+SELECT OrderID
+FROM [Order Details]
+UNION
+SELECT OrderID
+FROM [Order Details]
