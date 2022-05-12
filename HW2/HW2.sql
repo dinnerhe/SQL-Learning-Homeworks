@@ -83,8 +83,32 @@ SELECT o.CustomerID, SUM(d.Quantity) as ProductCount
     HAVING SUM(d.Quantity) > 100
 
 -- 9
-select sup.CompanyName as [Supplier Company Name], ship.CompanyName as [Shipping Company Name]
-FROM Shippers as ship, Suppliers as sup
+WITH SupplierData
+AS(
+    SELECT p.ProductID, p.SupplierID, s.CompanyName [SupplyName]
+    FROM Products as p JOIN Suppliers as s
+    ON p.SupplierID = s.SupplierID 
+), OrderSupplier
+AS(
+    SELECT od.OrderID, od.ProductID, sd.SupplierID, sd.SupplyName
+    FROM [Order Details] as od JOIN SupplierData as sd
+    ON od.ProductID = sd.ProductID
+), MOrderDetail
+AS(
+    SELECT os.*, o.ShipVia
+    FROM Orders as o JOIN OrderSupplier as os
+    ON o.OrderID = os.OrderID
+), OSS
+AS(
+    SELECT mo.*, s.CompanyName [ShipperName]
+    FROM Shippers as s JOIN MOrderDetail as mo
+    ON s.ShipperID = mo.ShipVia
+)
+select DISTINCT SupplyName  [Supplier Company Name] , ShipperName  [Shipping Company Name] from OSS
+
+
+
+
 
 -- 10 
 WITH OrderI(OrderID, ProductID, OrderDate)
@@ -99,9 +123,13 @@ ON p.ProductID = i.ProductID
 ORDER BY i.OrderDate
 
 -- 11
+
+SELECT dt.[Employee 1], dt.[Employee 2]
+FROM(
 SELECT e1.FirstName + ' ' + e1.LastName [Employee 1], e2.FirstName + ' ' + e2.LastName [Employee 2] 
 FROM Employees as e1 INNER JOIN Employees as e2
-ON (e1.FirstName != e2.FirstName or e1.LastName != e2.LastName) AND e1.Title = e2.Title
+ON e1.Title = e2.Title) as dt
+WHERE dt.[Employee 1]> dt.[Employee 2]
 
 -- 12
 SELECT e.FirstName + ' ' + e.LastName as Manager
@@ -128,10 +156,10 @@ GROUP BY e2.EmployeeID
 HAVING COUNT(e1.EmployeeID) >2
 
 -- 13
-SELECT City, ContactName [Name], ContactName[ContactName], 'Customer' [Type]
+SELECT City, CompanyName [Name], ContactName[ContactName], 'Customer' [Type]
 FROM Customers
 UNION
-SELECT City, ContactName [Name], ContactName[ContactName], 'Suppliers' [Type]
+SELECT City, CompanyName [Name], ContactName[ContactName], 'Suppliers' [Type]
 FROM Suppliers
 ORDER BY City
 
@@ -182,7 +210,11 @@ SELECT City
 FROM Customers
 GROUP BY City
 HAVING COUNT(CustomerID) >=2
-
+UNION
+SELECT City
+FROM Customers
+GROUP BY City
+HAVING COUNT(CustomerID) >=2
 
 -- 17 b. 
 SELECT cc.City as City
@@ -220,9 +252,10 @@ WITH RankDetail AS(
     ON s.ProductID = dt.ProductID
     WHERE PRank =1
 )
-SELECT p.ProductID, p.ProductName, AVG(UnitPrice) Over() [AVERAGE PRICE], rd.[Top City]
+SELECT p.ProductID, p.ProductName, UnitPrice  [AVERAGE UNIT PRICE], rd.[Top City]
 FROM Products as p INNER JOIN RankDetail as rd
 ON p.ProductID = rd.ProductID
+
 
 -- 20
 
