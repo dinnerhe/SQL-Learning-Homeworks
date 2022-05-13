@@ -1,15 +1,7 @@
 USE AdventureWorks2019
 go
-SELECT * from Person.CountryRegion
-order by Name
 --
-SELECT * from Person.StateProvince
-order by IsOnlyStateProvinceFlag, Name
---
-SELECT DISTINCT * 
-FROM Person.CountryRegion as c INNER JOIN Person.StateProvince as s
-ON c.CountryRegionCode = s.CountryRegionCode
-order by c.Name
+
 -- 1
 SELECT DISTINCT c.Name [Country], s.Name [Province]
 FROM Person.CountryRegion as c INNER JOIN Person.StateProvince as s
@@ -25,6 +17,7 @@ ORDER BY Country asc
 -- 
 use Northwind
 go
+
 -- 3
 WITH OrderI(OrderID, ProductID, OrderDate)
 AS(
@@ -37,20 +30,6 @@ SELECT DISTINCT p.ProductID, p.ProductName
 FROM Products p INNER JOIN OrderI as i 
 ON p.ProductID = i.ProductID 
 ORDER BY p.ProductName
-
--- 3 with COUNT
-WITH OrderI(OrderID, ProductID, OrderDate)
-AS(
-    SELECT o.OrderID, d.ProductID, o.OrderDate
-    FROM Orders as o INNER JOIN [Order Details] as d
-    ON o.OrderID = d.OrderID
-    WHERE YEAR(o.OrderDate) > 1997
-)
-SELECT DISTINCT p.ProductID, p.ProductName,  Count(p.ProductName) Over(Partition By p.ProductName) as 'Total'
-FROM Products p INNER JOIN OrderI as i 
-ON p.ProductID = i.ProductID 
-ORDER BY p.ProductName
-
 -- 4
 select TOP 5 ShipPostalCode
 from Orders as o JOIN [Order Details] as od
@@ -115,9 +94,6 @@ AS(
 select DISTINCT SupplyName  [Supplier Company Name] , ShipperName  [Shipping Company Name] from OSS
 
 
-
-
-
 -- 10 
 WITH OrderI(OrderID, ProductID, OrderDate)
 AS(
@@ -149,19 +125,6 @@ GROUP BY e2.EmployeeID
 HAVING COUNT(e1.EmployeeID) >2
 ) as inf
 ON e.EmployeeID = inf.EmployeeID
-
--- 12 Draft
-select * from Employees
-
-SELECT e1.FirstName + ' ' + e1.LastName [Employee 1], e1.EmployeeID, e1.ReportsTo ,e2.FirstName + ' ' + e2.LastName [Employee 2], e2.EmployeeID
-FROM Employees as e1 INNER JOIN Employees as e2
-ON (e1.FirstName != e2.FirstName or e1.LastName != e2.LastName) AND e1.ReportsTo = e2.EmployeeID
-
-SELECT e2.EmployeeID, COUNT(e1.EmployeeID) [ReportCount]
-FROM Employees as e1 INNER JOIN Employees as e2
-ON (e1.FirstName != e2.FirstName or e1.LastName != e2.LastName) AND e1.ReportsTo = e2.EmployeeID
-GROUP BY e2.EmployeeID
-HAVING COUNT(e1.EmployeeID) >2
 
 -- 13
 SELECT City, CompanyName [Name], ContactName[ContactName], 'Customer' [Type]
@@ -292,20 +255,6 @@ FROM (
 ) AS qc
 ON oc.ShipCity = qc.ShipCity
 
-
-
--- most order
-SELECT ShipCity, COUNT(OrderID) [Order Count]
-FROM Orders
-GROUP BY ShipCity
-Order By [Order Count] DESC
-
--- most quantity
-SELECT o.ShipCity, SUM(od.Quantity) [Quantity of Products]
-FROM Orders as o LEFT JOIN [Order Details] as od
-ON o.OrderID = od.OrderID
-GROUP BY o.ShipCity
-ORDER BY [Quantity of Products] DESC
 
 -- 21
 SELECT OrderID
