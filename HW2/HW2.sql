@@ -31,6 +31,7 @@ AS(
     SELECT o.OrderID, d.ProductID, o.OrderDate
     FROM Orders as o INNER JOIN [Order Details] as d
     ON o.OrderID = d.OrderID
+    WHERE YEAR(o.OrderDate) > 1997
 )
 SELECT DISTINCT p.ProductID, p.ProductName
 FROM Products p INNER JOIN OrderI as i 
@@ -43,7 +44,7 @@ AS(
     SELECT o.OrderID, d.ProductID, o.OrderDate
     FROM Orders as o INNER JOIN [Order Details] as d
     ON o.OrderID = d.OrderID
-    WHERE o.OrderDate > YEAR(1997)
+    WHERE YEAR(o.OrderDate) > 1997
 )
 SELECT DISTINCT p.ProductID, p.ProductName,  Count(p.ProductName) Over(Partition By p.ProductName) as 'Total'
 FROM Products p INNER JOIN OrderI as i 
@@ -51,11 +52,12 @@ ON p.ProductID = i.ProductID
 ORDER BY p.ProductName
 
 -- 4
-select ShipPostalCode, COUNT(OrderID) as OrderCount
-from Orders
-WHERE OrderDate > YEAR(1997)
+select TOP 5 ShipPostalCode
+from Orders as o JOIN [Order Details] as od
+ON o.OrderID = od.OrderID
+WHERE YEAR(OrderDate) > 1997
 GROUP BY ShipPostalCode
-ORDER BY OrderCount DESC
+ORDER BY SUM(Quantity) DESC
 -- 5
 select City, COUNT(CustomerID) as CustomerCount
 from Customers
@@ -70,11 +72,17 @@ HAVING COUNT(CustomerID) >=2
 order by City
 
 -- 7 
-
-SELECT o.CustomerID, SUM(d.Quantity) as ProductCount
+WITH CustomerCount
+AS(
+    SELECT o.CustomerID, SUM(d.Quantity) as ProductCount
     FROM Orders as o INNER JOIN [Order Details] as d
     ON o.OrderID = d.OrderID
     GROUP BY o.CustomerID
+)
+SELECT c.CustomerID, c.ContactName [Name], cc.ProductCount
+FROM Customers as c LEFT JOIN CustomerCount as cc
+ON c.CustomerID = cc.CustomerID
+
 -- 8
 SELECT o.CustomerID, SUM(d.Quantity) as ProductCount
     FROM Orders as o INNER JOIN [Order Details] as d
@@ -209,29 +217,39 @@ ORDER BY p.ProductID
 SELECT City
 FROM Customers
 GROUP BY City
-HAVING COUNT(CustomerID) >=2
+EXCEPT
+(
+SELECT City
+FROM Customers
+GROUP BY City
+HAVING COUNT(CustomerID) = 0
 UNION
 SELECT City
 FROM Customers
 GROUP BY City
-HAVING COUNT(CustomerID) >=2
+HAVING COUNT(CustomerID) = 1
+)
+
+
 
 -- 17 b. 
-SELECT cc.City as City
-FROM(
-    SELECT City, COUNT(CustomerID) as CCount
+SELECT DISTINCT City
+FROM Customers where City in (
+    SELECT City
     FROM Customers
     GROUP BY City
     HAVING COUNT(CustomerID) >=2
-) as cc
+)
 
 -- 18
 
-SELECT o.ShipCity, COUNT(DISTINCT od.ProductID) [ProductKindCount]
+SELECT o.ShipCity
 FROM Orders o INNER JOIN [Order Details] od
 ON o.OrderID = od.OrderID
 GROUP BY o.ShipCity
 HAVING COUNT(DISTINCT od.ProductID) >= 2
+
+
 
 -- 19
 
