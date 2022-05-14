@@ -73,4 +73,55 @@ EXEC sp_product_order_city_he 'Aniseed Syrup'
 DROP PROC sp_product_order_city_he
 GO
 -- 4
+CREATE TABLE city_he(
+Id INT PRIMARY KEY,
+City VARCHAR(30)
+)
+INSERT INTO dbo.city_he VALUES (1, 'Seattle'), (2, 'Green Bay')
 
+
+CREATE TABLE people_he(
+Id INT,
+Name VARCHAR(30),
+City INT FOREIGN KEY REFERENCES city_he(Id)
+)
+INSERT INTO dbo.people_he VALUES (1, 'Aaron Rodgers', 2), (2, 'Russell Wilson', 1), (3, 'Jody Nelson', 2)
+GO 
+SELECT * FROM people_he
+SELECT * FROM city_he
+UPDATE city_he SET City = 'Madison' WHERE City = 'Seattle'
+go
+CREATE VIEW Packers_he AS(
+    SELECT  p.Name [Name], p.Id [PeopleId], p.City[CityId], c.City[CityName]
+    FROM people_he as p JOIN city_he as c
+    ON p.City = c.Id
+    WHERE c.City = 'Green Bay'
+)
+go
+SELECT * from Packers_he
+DROP TABLE people_he
+DROP TABLE city_he
+DROP VIEW Packers_he
+go
+-- 5
+CREATE PROC sp_birthday_employees_he
+AS
+BEGIN
+    CREATE TABLE birthday_employees_he(
+        Name VARCHAR(30),
+        Birthday DATE
+    )
+    INSERT INTO birthday_employees_he 
+    SELECT CONCAT(FirstName, LastName), BirthDate
+    FROM Employees
+    WHERE MONTH(BirthDate) = 2
+    
+
+END
+go
+EXEC sp_birthday_employees_he
+SELECT * FROM birthday_employees_he
+
+DROP TABLE birthday_employees_he
+DROP PROC sp_birthday_employees_he
+-- 6. INTERSECT two table and see if the results is the same as one table
