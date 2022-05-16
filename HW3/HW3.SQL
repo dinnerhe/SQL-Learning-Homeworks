@@ -83,13 +83,15 @@ INSERT INTO dbo.city_he VALUES (1, 'Seattle'), (2, 'Green Bay')
 CREATE TABLE people_he(
 Id INT,
 Name VARCHAR(30),
-City INT FOREIGN KEY REFERENCES city_he(Id)
+City INT
 )
 INSERT INTO dbo.people_he VALUES (1, 'Aaron Rodgers', 2), (2, 'Russell Wilson', 1), (3, 'Jody Nelson', 2)
 GO 
 SELECT * FROM people_he
+--UPDATE city_he SET City = 'Madison' WHERE City = 'Seattle'
+DELETE FROM city_he WHERE City = 'Seattle'
+INSERT INTO city_he VALUES(1, 'Madison')
 SELECT * FROM city_he
-UPDATE city_he SET City = 'Madison' WHERE City = 'Seattle'
 go
 CREATE VIEW Packers_he AS(
     SELECT  p.Name [Name], p.Id [PeopleId], p.City[CityId], c.City[CityName]
