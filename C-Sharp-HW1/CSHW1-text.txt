@@ -1,0 +1,23 @@
+1. 
+A person’s telephone number : long
+
+A person’s height:
+ 
+A person’s age: 
+
+A person’s gender (Male, Female, Prefer Not To Answer): 
+
+A person’s salary: int
+
+A book’s ISBN: 
+
+A book’s price: 
+
+A book’s shipping weight
+
+A country’s population: uint
+
+The number of stars in the universe: ulong
+
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business)
