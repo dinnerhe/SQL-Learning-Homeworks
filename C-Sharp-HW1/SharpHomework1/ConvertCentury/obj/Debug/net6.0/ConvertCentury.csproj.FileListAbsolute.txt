@@ -1,0 +1,15 @@
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.csproj.AssemblyReference.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.AssemblyInfoInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.AssemblyInfo.cs
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.csproj.CoreCompileInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\bin\Debug\net6.0\ConvertCentury.exe
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\bin\Debug\net6.0\ConvertCentury.deps.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\bin\Debug\net6.0\ConvertCentury.runtimeconfig.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\bin\Debug\net6.0\ConvertCentury.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\bin\Debug\net6.0\ConvertCentury.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\refint\ConvertCentury.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ConvertCentury.genruntimeconfig.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ConvertCentury\obj\Debug\net6.0\ref\ConvertCentury.dll

@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using UnderstandingTypes;
 
 string header = String.Format("{0,-10} {1, -10} {2, -30} {3, -30}\n", "Type", "Memory", "Minumum", "Maximum");
 Console.Write(header);
@@ -15,4 +14,3 @@ Console.Write("{0,-10} {1, -10} {2, -30} {3, -30}\n", "ulong", "8", "0", "18,446
 Console.Write("{0,-10} {1, -10} {2, -30} {3, -30}\n", "float", "4", "±1.0e-45", "±3.4e38");
 Console.Write("{0,-10} {1, -10} {2, -30} {3, -30}\n", "double", "8", "±5e-324", "±1.7e308");
 Console.Write("{0,-10} {1, -10} {2, -30} {3, -30}\n", "decimal", "16", "±1.0 ×10e-28", "±7.9e28");
-ConvertCentury.Convert(5);
