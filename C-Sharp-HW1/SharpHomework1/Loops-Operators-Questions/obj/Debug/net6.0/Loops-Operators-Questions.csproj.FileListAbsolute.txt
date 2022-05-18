@@ -1,0 +1,15 @@
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\bin\Debug\net6.0\Loops-Operators-Questions.exe
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\bin\Debug\net6.0\Loops-Operators-Questions.deps.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\bin\Debug\net6.0\Loops-Operators-Questions.runtimeconfig.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\bin\Debug\net6.0\Loops-Operators-Questions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\bin\Debug\net6.0\Loops-Operators-Questions.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.csproj.AssemblyReference.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.AssemblyInfoInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.AssemblyInfo.cs
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.csproj.CoreCompileInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\refint\Loops-Operators-Questions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\Loops-Operators-Questions.genruntimeconfig.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\Loops-Operators-Questions\obj\Debug\net6.0\ref\Loops-Operators-Questions.dll
