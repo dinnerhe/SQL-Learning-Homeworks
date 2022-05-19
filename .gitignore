@@ -1,2 +1,5 @@
 
 .DS_Store
+*.dll
+.vs
+*.log
