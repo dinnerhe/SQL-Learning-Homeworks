@@ -3,5 +3,5 @@
 using UnderstandingTypes;
 Console.Write("Enter The Number of Centuries: ");
 string? input = Console.ReadLine();
-uint.TryParse(input, out uint result);
+uint.TryParse(input, out var result);
 ConvertCentury.Convert(result);
