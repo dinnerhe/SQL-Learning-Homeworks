@@ -1,5 +1,5 @@
 # C# Homework 1
 
 ## This folder contains the solution to the homework 1 questions. 
-## The conceptual question answers are in the file [CSHW1-text.txt](C-Sharp-HW1/CSHW1-text.txt).
-## Other coding questions are in the corresponding folders in [SharpHomeWork1](C-Sharp-HW1/SharpHomework1).
+## The conceptual question answers are in the file [CSHW1-text.txt](CSHW1-text.txt).
+## Other coding questions are in the corresponding folders in [SharpHomeWork1](SharpHomework1).
