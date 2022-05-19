@@ -1,0 +1,15 @@
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\bin\Debug\net6.0\SharpHomework3.exe
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\bin\Debug\net6.0\SharpHomework3.deps.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\bin\Debug\net6.0\SharpHomework3.runtimeconfig.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\bin\Debug\net6.0\SharpHomework3.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\bin\Debug\net6.0\SharpHomework3.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.csproj.AssemblyReference.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.AssemblyInfoInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.AssemblyInfo.cs
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.csproj.CoreCompileInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\refint\SharpHomework3.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\SharpHomework3.genruntimeconfig.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW3\SharpHomework3\SharpHomework3\obj\Debug\net6.0\ref\SharpHomework3.dll
