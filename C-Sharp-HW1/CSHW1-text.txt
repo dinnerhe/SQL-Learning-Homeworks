@@ -41,4 +41,48 @@ GC will also allocates objects on managed heap efficiently.
 
 
 Controlling Flow and Converting Types
-1. 
+1. What happens when you divide an int variable by 0?
+It will throw System.DivideByZeroException when running
+
+2. What happens when you divide a double variable by 0?
+the variable will become infinite(∞)
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+Since int is signed, overflow it sets the varibale to a wrong value
+e.g. -2147483648 -1 becomes 2147483647 
+ 2147483647 +1 becomes -2147483648
+
+
+4. What is the difference between x = y++; and x = ++y;?
+In the first case, the x will be assigned with y's value, then y add by 1
+In the second case, y will first add by 1, then x will be assigned with y's value
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+break stops the loop and begin running code next to the loop.
+continue skipped the remaining code of current cycle, but the loop will continue running
+return will exit the method.
+
+6. What are the three parts of a for statement and which of them are required?
+The first part is initializer, it will run only once in the beginning of for loop
+The second part is end condition, it will be evaluated at the start of each cycle, if the statement is true, the code inside the loop will execute, otherwise the program will execute the next line of code after the loop
+The third part is the iterator, it will execute every time after the execution of the body code of loop.
+None of them are required for a for statement(if all 3 are missing it becomes a infinite loop)
+
+
+7. What is the difference between the = and == operators?
+= operator is used for assignment (assign values to variable)
+== is equality operator that checks if its operands are equal or not
+
+8. Does the following statement compile? for ( ; true; ) ;
+It does because it is semantically correct.
+
+
+9. What does the underscore _ represent in a switch expression?
+
+
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+
+The object needs to implment IEnumerable<T> to be enumberated.
