@@ -12,4 +12,14 @@ public class CopyArray
         }
         Console.WriteLine($"Original Array: {String.Join(',', Array1)}\nCopied Array: {string.Join(',', CopyOfArray)}");
     }
+    public static int[] Copy(int[] Array1)
+    {
+     
+        int[] CopyOfArray = new int[Array1.Length];
+        for (int i = 0; i < Array1.Length; i++)
+        {
+            CopyOfArray[i] = Array1[i];
+        }
+        return CopyOfArray;
+    }
 }

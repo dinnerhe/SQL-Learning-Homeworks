@@ -80,9 +80,34 @@ It does because it is semantically correct.
 
 
 9. What does the underscore _ represent in a switch expression?
-
+_ is represent a discardable variable.
 
 10. What interface must an object implement to be enumerated over by using the foreach
 statement?
 
 The object needs to implment IEnumerable<T> to be enumberated.
+
+Arrays and Strings
+1. When to use String vs. StringBuilder in c#?
+When we need to do a lot of string manipulation, StringBuilder will save a lot of space in memory compare to using String.
+When we don't manipulate the string very much, String is enough.
+
+2. What is the base class for all arrays in C#?
+The base class for all arrays in C# is Array class
+
+3. How do you sort an array in C#?
+Array.Sort(the_array_you_want_to-sort);
+
+4. What property of an array object can be used to get the total number of elements in
+an array?
+the Length property
+
+5. Can you store multiple data types in System.Array?
+
+no, only one data type is allowed in a single array.
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+Clone() returns a new array, while copy to needs to specify the copy destination.
+Copyto can also allows you to specify the starting index of tatget array at which copying begins.
+
+

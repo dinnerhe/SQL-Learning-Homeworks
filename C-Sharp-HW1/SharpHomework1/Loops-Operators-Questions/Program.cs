@@ -6,4 +6,5 @@ using Loops_Operators_Questions;
 //Console.WriteLine(CalculateAge.calc());
 //Greetings.Greets(new DateTime(2000, 12, 29, 14, 22, 22));
 //Greetings.Greets(DateTime.Now);
-Count24.Count();
+//Count24.Count();
+//FizzBuzz.Run(30);
