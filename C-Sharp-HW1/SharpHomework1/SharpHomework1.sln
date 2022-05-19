@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderstandingTypes", "Under
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertCentury", "ConvertCentury\ConvertCentury.csproj", "{2E9B3537-22BC-42B8-8743-17DE4EC0FCC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops-Operators-Questions", "Loops-Operators-Questions\Loops-Operators-Questions.csproj", "{6A07A4D8-A5F8-44BA-A464-053E071BDC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysQuestions", "ArraysQuestions\ArraysQuestions.csproj", "{66E04242-2BAC-4703-AC45-3C8BF3E0FC2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{2E9B3537-22BC-42B8-8743-17DE4EC0FCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E9B3537-22BC-42B8-8743-17DE4EC0FCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E9B3537-22BC-42B8-8743-17DE4EC0FCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A07A4D8-A5F8-44BA-A464-053E071BDC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A07A4D8-A5F8-44BA-A464-053E071BDC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A07A4D8-A5F8-44BA-A464-053E071BDC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A07A4D8-A5F8-44BA-A464-053E071BDC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E04242-2BAC-4703-AC45-3C8BF3E0FC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E04242-2BAC-4703-AC45-3C8BF3E0FC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E04242-2BAC-4703-AC45-3C8BF3E0FC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E04242-2BAC-4703-AC45-3C8BF3E0FC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

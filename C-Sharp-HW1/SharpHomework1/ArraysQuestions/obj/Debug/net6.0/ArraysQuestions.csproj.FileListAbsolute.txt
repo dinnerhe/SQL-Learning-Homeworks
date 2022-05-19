@@ -1,0 +1,15 @@
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\bin\Debug\net6.0\ArraysQuestions.exe
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\bin\Debug\net6.0\ArraysQuestions.deps.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\bin\Debug\net6.0\ArraysQuestions.runtimeconfig.json
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\bin\Debug\net6.0\ArraysQuestions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\bin\Debug\net6.0\ArraysQuestions.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.csproj.AssemblyReference.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.AssemblyInfoInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.AssemblyInfo.cs
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.csproj.CoreCompileInputs.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\refint\ArraysQuestions.dll
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.pdb
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ArraysQuestions.genruntimeconfig.cache
+C:\Users\dinne\Documents\GitHub\SQL-Learning-Homeworks\C-Sharp-HW1\SharpHomework1\ArraysQuestions\obj\Debug\net6.0\ref\ArraysQuestions.dll
