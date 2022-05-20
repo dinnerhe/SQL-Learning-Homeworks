@@ -13,7 +13,7 @@ public abstract class Person: IPersonService
         return Age;
     }
 
-    public string GetName()
+    public virtual string GetName()
     {
         return Name;
     }
@@ -47,6 +47,12 @@ public class Student : Person, IStudentService
         Name = name;
         Courses = new Dictionary<string, char>();
         Addresses = address;
+    }
+
+    public override string GetName()
+    {
+        return "Student" + base.GetName();
+        
     }
 
     public override decimal GetSalary()
@@ -85,22 +91,35 @@ public class Student : Person, IStudentService
 
 public class Instructor : Person, IInstructorService
 {
+    public const int BonusPerYear = 1000;
     private decimal _salary;
+    private DateTime _joinDate;
+    public string DepartmentName { get; private set; }
 
     public Instructor(int age, string name, decimal salary)
     {
         Age = age;
         Name = name;
         _salary = salary;
+        _joinDate = DateTime.Now;
+    }
+    public Instructor(int age, string name, decimal salary, DateTime join)
+    {
+        Age = age;
+        Name = name;
+        _salary = salary;
+        _joinDate = join;
     }
 
     public override decimal GetSalary()
     {
-        return _salary;
+        decimal bonus = Math.Ceiling((DateTime.Now - _joinDate).Days / 365m) * 1000m;
+        Console.WriteLine($"{Name}'s bonus: {bonus}");
+        return _salary + bonus;
     }
 
     public string GetDepartment()
     {
-        throw new NotImplementedException();
+        return DepartmentName;
     }
 }
