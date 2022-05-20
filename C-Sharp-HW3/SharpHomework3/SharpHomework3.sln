@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci2", "Fibonacci2\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorBall", "ColorBall\ColorBall.csproj", "{C40C7C3C-F4BE-462F-A28A-6D6082DF197F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPExample", "OOPExample\OOPExample.csproj", "{63BD870A-443E-4D69-8AD8-60E6B11EA3F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C40C7C3C-F4BE-462F-A28A-6D6082DF197F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40C7C3C-F4BE-462F-A28A-6D6082DF197F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40C7C3C-F4BE-462F-A28A-6D6082DF197F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BD870A-443E-4D69-8AD8-60E6B11EA3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BD870A-443E-4D69-8AD8-60E6B11EA3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BD870A-443E-4D69-8AD8-60E6B11EA3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BD870A-443E-4D69-8AD8-60E6B11EA3F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
