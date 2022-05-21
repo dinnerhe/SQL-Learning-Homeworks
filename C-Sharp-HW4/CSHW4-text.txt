@@ -10,7 +10,7 @@ Two, one for key one for value
 4. True/False. When a generic class has multiple type parameters, they must all match.
 False
 5. What method is used to add items to a List object?
-add
+Add()
 6. Name two methods that cause items to be removed from a List.
 Remove() and RemoveAll()
 7. How do you indicate that a class has a generic type parameter?
