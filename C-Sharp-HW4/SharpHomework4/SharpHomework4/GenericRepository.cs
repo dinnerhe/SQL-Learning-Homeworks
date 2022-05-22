@@ -1,20 +1,20 @@
 ﻿namespace SharpHomework4;
 
-public class GenericRepository<TProducts>: IRepository<TProducts> where TProducts : Products
+public class GenericRepository<T>: IRepository<T> where T : class, Generictype
 {
-    private List<TProducts> _list;
+    private List<T> _list;
 
     public GenericRepository()
     {
-        _list = new List<TProducts>();
+        _list = new List<T>();
     }
 
-    public void Add(TProducts item)
+    public void Add(T item)
     {
         _list.Add(item);
     }
 
-    public void Remove(TProducts item)
+    public void Remove(T item)
     {
         _list.Remove(item);
     }
@@ -24,14 +24,14 @@ public class GenericRepository<TProducts>: IRepository<TProducts> where TProduct
         throw new NotImplementedException();
     }
 
-    public IEnumerable<TProducts> GetAll()
+    public IEnumerable<T> GetAll()
     {
         return _list;
     }
 
-    public TProducts GetById(int id)
+    public T GetById(int id)
     {
-        foreach (TProducts item in _list)
+        foreach (T item in _list)
         {
             if (item.Id == id) return item;
         }
