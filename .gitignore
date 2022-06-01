@@ -7,3 +7,4 @@
 *.props
 C-Sharp-HW1/SharpHomework1/ArraysQuestions/obj/Debug/net6.0/apphost
 *.cache
+.idea/
